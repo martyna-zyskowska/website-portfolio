@@ -1,0 +1,80 @@
+.gallery {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-top: 3%;
+}
+
+.photo {
+  display: inline-block;    
+  width: 20%;
+  margin: 0%;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  opacity: 1;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+/* .icon-heart-empty:before {
+  font-size: 3vw;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  opacity: 0;
+}
+
+.icon-heart-empty:hover:before {
+  cursor: pointer;
+}
+
+.photo:hover > .icon-heart-empty:before {
+  font-size: 3vw;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  opacity: 1;
+  color: white;
+  z-index: 1;
+} */
+
+
+
+
+
+
+
+
+
+
+
+.serce {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  opacity: 0;
+}
+
+/* checkbox out of sight */
+[class='heart'] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for='heart'] {
+  color: white;
+  cursor: pointer;
+}
+
+.heart:checked + label {
+  color: #e2264d;
+}
+
+div:hover > .serce {
+  opacity: 1;
+}

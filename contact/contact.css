@@ -1,0 +1,251 @@
+#box {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+}
+
+#boxBusinessCard {
+    font-family: century gothic;
+    float: left;
+    width: 49%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    transition-duration: 0.2s;
+}
+
+#boxBusinessCard:hover {
+    border: 5px solid rgb(40, 192, 243);
+    transition-duration: 0.2s;
+}
+
+#boxBusinessCardDetails {
+    padding: 6%;
+}
+
+#fieldName {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+}
+
+#fieldRole {
+    font-size: 20px;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.fieldContactType {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.fieldContactDetails {
+    font-size: 14px;
+    margin-left: 2%;
+    text-align: center;
+}
+
+/* .download {
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+#download {
+    background-color: white;
+    border: 2px outset rgb(40, 192, 243);
+    padding: 3%;
+    box-shadow: none;
+    width: 60%;
+    border-radius: 6px;
+}
+
+#download:hover {
+    border: 1px inset rgb(40, 192, 243);
+    cursor: pointer;
+} */
+
+.socials {
+    width: 100%;
+    text-align: center;
+}
+
+.icon-facebook:before { 
+    content: '\f30c'; 
+    font-size: 35px; 
+    padding: 2%;
+    /* background-color: #4668b3; */
+    color: black;
+    border-radius: 100%;
+    padding: 2%;
+    transition-duration: 0.2s;
+}
+
+.icon-facebook:hover:before {
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.icon-youtube:before { 
+    content: '\f167'; 
+    font-size: 35px; 
+    padding: 2%; 
+    /* background-color: #d94348; */
+    color: black;
+    border-radius: 100%;
+    transition-duration: 0.2s;
+}
+
+.icon-youtube:hover:before {
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.icon-linkedin:before { 
+    content: '\f318'; 
+    font-size: 35px; 
+    padding: 2%; 
+    /* background-color: #0e76a8; */
+    color: black;
+    border-radius: 100%;
+    transition-duration: 0.2s;
+} 
+
+.icon-linkedin:hover:before {
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.icon-instagram:before { 
+    content: '\f32d'; 
+    font-size: 35px; 
+    padding: 2%; 
+    /* background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  */
+    color: black;
+    border-radius: 100%;
+    transition-duration: 0.2s;
+}
+
+.icon-instagram:hover:before {
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+#emailForm {
+    border: 2px dashed black;
+    border-left: none;
+    font-family: century gothic;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#greeting {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+#emailFormDetails {
+    padding: 3%;
+}
+
+#firstRow {
+    display: flex;
+}
+
+#userName {
+    width: 40%;
+    margin-right: 1%;
+    margin-bottom: 0%;
+}
+
+#userEmail {
+    width: 60%;
+    margin-bottom: 0%;
+}
+
+#subject {
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+#message {
+    width: 100%;
+    margin-bottom: 0%;
+    height: 160px !important;
+}
+
+input[type=text], textarea {
+    font: 12px century gothic,sans-serif;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 2%;
+    outline: none;
+    resize: vertical /* message area right bottom corner user can resize the textarea but only vertically */
+}
+
+input[type=text]:focus,
+textarea:focus {
+    box-shadow: 0px 0px 0px 1px rgb(40, 192, 243);
+    border-color: white;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    margin-top: 3px;
+    outline: none;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(40, 192, 243);
+    color: black;
+    transition-duration: 0.2s;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1510px) {
+    #boxBusinessCard {
+        border: none;
+        width: 100%;
+        margin-bottom: 2%;
+        border: 5px solid rgb(40, 192, 243);
+    }
+
+    #fieldName {
+        font-size: 33px;
+    }
+
+    #emailForm {
+        margin-top: 2%;
+        float: left;
+        width: 100%;
+        border: none;
+        margin-left: 1%; /* because the emailForm field has 49% in total */
+    }
+
+    #greeting {
+        font-size: 15px;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,548 @@
+nav 
+{
+    margin-bottom: 5% !important;
+}
+
+.title 
+{
+    text-align: center;
+    font-size: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2vw;
+    font-variant: small-caps;
+}
+
+.section 
+{
+    width: 100%;
+    text-align: center;
+}
+
+img 
+{
+    width: 100%;
+}
+
+.logo 
+{
+    display: inline-block;
+    width: 15%;
+    /* transition-duration: 0.3s; */
+    z-index: -1;
+    position: inherit;
+}
+
+.logo:hover {
+    transform: scale(0.8); 
+    transition-duration: 0.3s;
+}
+
+
+
+
+
+
+
+#volvo {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#volvo #volvodesc {
+    visibility: hidden;
+    width: 310%;
+    background-color: lightgray;
+    color: black;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 0;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+    text-align: left !important;
+
+}
+#volvo:hover #volvodesc {
+    visibility: visible;
+}
+
+
+
+
+#hcl {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#hcl #hcldesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#hcl:hover #hcldesc {
+    visibility: visible;
+}
+
+
+#ubs {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#ubs #ubsdesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#ubs:hover #ubsdesc {
+    visibility: visible;
+}
+
+
+
+#ac3 {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#ac3 #ac3desc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#ac3:hover #ac3desc {
+    visibility: visible;
+}
+
+
+#wsb {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#wsb #wsbdesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#wsb:hover #wsbdesc {
+    visibility: visible;
+}
+
+
+#wsf {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#wsf #wsfdesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#wsf:hover #wsfdesc {
+    visibility: visible;
+}
+
+
+
+#remedy {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#remedy #remedydesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#remedy:hover #remedydesc {
+    visibility: visible;
+}
+
+
+#snow {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#snow #snowdesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#snow:hover #snowdesc {
+    visibility: visible;
+}
+
+
+#confluence {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#confluence #confluencedesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#confluence:hover #confluencedesc {
+    visibility: visible;
+}
+
+
+
+#jira {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#jira #jiradesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#jira:hover #jiradesc {
+    visibility: visible;
+}
+
+
+
+
+#html {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#html #htmldesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#html:hover #htmldesc {
+    visibility: visible;
+}
+
+
+
+
+#css {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#css #cssdesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#css:hover #cssdesc {
+    visibility: visible;
+}
+
+
+
+
+
+#js {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#js #jsdesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#js:hover #jsdesc {
+    visibility: visible;
+}
+
+
+
+#hootsuite {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#hootsuite #hootsuitedesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#hootsuite:hover #hootsuitedesc {
+    visibility: visible;
+}
+
+
+
+
+#office {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#office #officedesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#office:hover #officedesc {
+    visibility: visible;
+}
+
+
+
+
+
+
+#aem {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#aem #aemdesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#aem:hover #aemdesc {
+    visibility: visible;
+}
+
+
+
+#hp {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#hp #hpdesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#hp:hover #hpdesc {
+    visibility: visible;
+}
+
+
+
+#itil {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#itil #itildesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#itil:hover #itildesc {
+    visibility: visible;
+}
+
+
+
+#time {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+#time #timedesc {
+    visibility: hidden;
+    width: 300%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+#time:hover #timedesc {
+    visibility: visible;
+}
+
+#year, h4, p {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 100%;
+    font-family: century gothic;
+}
+
+#year {
+    font-size: 2vw;
+    font-weight: 700;
+    color: rgb(40, 192, 243);
+
+}
+
+h4 {
+    font-size: 1.4vw;
+}
+
+p {
+    font-size: 1.1vw;
+}

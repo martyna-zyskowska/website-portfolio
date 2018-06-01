@@ -1,0 +1,90 @@
+#hobby 
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#music 
+{
+    background-color: grey;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2vw;
+    font-weight: 700;
+    margin-right: 4%;
+    border-radius: 20px;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    transition-duration: 0.3s;
+}
+
+#music:hover {
+    background-color: rgb(40, 192, 243);
+    color: white;
+    transition-duration: 0.3s;
+    transform: scale(1.1); 
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#photography 
+{
+    background-color: grey;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2vw;
+    font-weight: 700;
+    border-radius: 20px;  
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    transition-duration: 0.3s;
+}
+
+#photography:hover {
+    background-color: rgb(40, 192, 243);
+    color: white;
+    transition-duration: 0.3s;
+    transform: scale(1.1); 
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    #music, #photography {
+        width: 80%; 
+        vertical-align: middle;
+        margin: 0;
+        margin-top: 3%;
+        border-radius: 20px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 3.5vw;
+    }
+    #hobby {
+        margin: 0%;
+    }  
+    #music:hover, #photography:hover {
+        width: 80%;
+        vertical-align: middle;
+        margin: 0;
+        margin-top: 3%;
+        border-radius: 20px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 3.5vw;
+    }
+}   
+
+a {
+    text-decoration: none;
+    color: black;
+}
