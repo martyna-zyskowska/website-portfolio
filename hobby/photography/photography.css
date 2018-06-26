@@ -1,80 +1,148 @@
-.gallery {
-  width: 100%;
-  text-align: center;
-  display: inline-block;
-  margin-top: 3%;
+#wrap {
+width: 100%;
+text-align: center;
 }
 
-.photo {
-  display: inline-block;    
-  width: 20%;
-  margin: 0%;
+.gallery {
+  width: 90%;
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-left: 1%;
+}
+
+.imageContainer {
+  display: inline-block;
+  margin: 3px;
+  /* margin: -3px; */
   position: relative;
+  overflow: hidden;
+  width: 26%;
+}
+
+.imageContainer:hover {
+  cursor: pointer;
 }
 
 img {
   width: 100%;
-  opacity: 1;
+  /* opacity: 1;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); */
+  transition: 1s;
+  float: left;
 }
 
 img:hover {
-  opacity: 0.7;
+  /* opacity: 1;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0); */
+  transform: scale(1.15);
+  transition: 1s;
 }
 
-/* .icon-heart-empty:before {
-  font-size: 3vw;
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  opacity: 0;
+#bookmarks {
+  width: 90%;
+  margin-top: 1%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.icon-heart-empty:hover:before {
-  cursor: pointer;
+#bookmarkTop {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  background-color: lightgray;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100px;
 }
 
-.photo:hover > .icon-heart-empty:before {
-  font-size: 3vw;
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  opacity: 1;
-  color: white;
-  z-index: 1;
-} */
+#bookmarkLeft {
 
-
-
-
-
-
-
-
-
-
-
-.serce {
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  opacity: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 80px;
 }
 
-/* checkbox out of sight */
-[class='heart'] {
-  position: absolute;
-  left: -100vw;
+#bookmarkRight {
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 80px;
 }
 
-[for='heart'] {
-  color: white;
-  cursor: pointer;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-.heart:checked + label {
-  color: #e2264d;
+#bookmarkLeft:hover,
+#bookmarkRight:hover,
+#bookmarkTop:hover {
+  background-color: rgb(40, 192, 243);
 }
 
-div:hover > .serce {
-  opacity: 1;
+#bookmarkLeft:active,
+#bookmarkRight:active,
+#bookmarkTop:active {
+  background-color: rgb(40, 192, 243);
 }
+
+@media screen and (max-width: 750px)
+{
+    .gallery
+    {
+        width: 80%;
+        background-color: rebeccapurple;
+    }
+    .imageContainer {
+      width: 100%;
+      margin: -3px;
+    }
+    img
+    {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+    }
+    img:hover{
+      transform: none;
+      transition: none;
+    }
+}
+
+.back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 15%;
+  right: 8%;
+  width: 60px;
+  height: 60px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: rgb(40, 192, 243);
+  background-color: #ffffff;
+  }
+
+  .back-to-top i {
+    font-size: 60px;
+  }
+

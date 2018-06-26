@@ -1,11 +1,94 @@
+nav ul li a:hover
+{
+    color: crimson;
+}
+
 html, body {
   /* background: #222; */
-  overflow: hidden;
+  opacity: 1;
+}
+
+#bookmarkTop {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+button {
+  /* background-color: rgb(40, 192, 243); */
+  background-color: lightgray;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color:crimson;
+}
+
+button:active {
+  background-color: rgb(40, 192, 243);
+}
+
+/* #wrap {
+  margin-top: 2%;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+
+
+#videoBox {
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aqua;
+  height: 60%;
+}
+
+#video {
+  margin-top: 1%;
+  width: 50%;
+  height: 55%;
+  position: absolute;
+  z-index: -99; 
+}
+
+#video1 {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+}
+
+#text {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 320px;
+}
+
+#coming {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: crimson;
+}
+#soon {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .view {
-margin-top: 15%;
-
+margin-top: 210px;
   -webkit-perspective: 400;
           perspective: 400;
 }
@@ -103,4 +186,24 @@ margin-top: 15%;
     -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
             transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
+}
+
+
+@media screen and (max-width: 750px) 
+{
+  #videoBox {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+    height: 60%;
+  }
+#video {
+
+  width: 80%;
+  height: 55%;
+  position: absolute;
+  z-index: -99; 
+}
 }

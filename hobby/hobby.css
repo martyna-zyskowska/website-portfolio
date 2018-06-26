@@ -9,53 +9,55 @@
 
 #music 
 {
-    background-color: grey;
-    width: 20%;
+    background-color: lightgray;
+    border: black 4px solid;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
     vertical-align: middle;
-    font-size: 2vw;
+    font-size: 28px;
     font-weight: 700;
     margin-right: 4%;
     border-radius: 20px;
-    padding-top: 3.5%;
-    padding-bottom: 3.5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
     transition-duration: 0.3s;
 }
 
 #music:hover {
-    background-color: rgb(40, 192, 243);
-    color: white;
+    border: rgb(40, 192, 243) 4px solid;
     transition-duration: 0.3s;
-    transform: scale(1.1); 
-    border-radius: 20px;
     cursor: pointer;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    font-size: 30px;
 }
 
 #photography 
 {
-    background-color: grey;
-    width: 20%;
+    background-color: lightgray;
+    border: black 4px solid;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
     vertical-align: middle;
-    font-size: 2vw;
+    font-size: 28px;
     font-weight: 700;
     border-radius: 20px;  
-    padding-top: 3.5%;
-    padding-bottom: 3.5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
     transition-duration: 0.3s;
 }
 
 #photography:hover {
-    background-color: rgb(40, 192, 243);
-    color: white;
-    transition-duration: 0.3s;
-    transform: scale(1.1); 
-    border-radius: 20px;
+    border: rgb(40, 192, 243) 4px solid;
+    color: black;
     cursor: pointer;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    font-size: 30px;
 }
 
 @media screen and (max-width: 800px) {
