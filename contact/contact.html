@@ -13,11 +13,12 @@
         <!-- tytuł taba -->
         <title>Martyna Zyskowska</title>
         <!-- zaciąganie info z css -->
-        <link rel="stylesheet" href="../about/style.css">
+        <link rel="stylesheet" href="../about/about.css">
         <!-- zaciąganie info z css -->
         <link rel="stylesheet" href="contact.css">
         <!-- zaciągnięcie ikon socialmedia z css -->
         <link rel="stylesheet" href="../icons/css/fontello.css" type="text/css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
 
     <!-- treść -->
@@ -25,12 +26,12 @@
         <main>
             <div id="wrap">
                 <header>
-                    <h1>Martyna Zyskowska</h1>
+                    <h1><span style="color:rgb(40, 192, 243)">Martyna</span> Zyskowska</h1>
                     <h2>PORTFOLIO</h2>
                 </header>
                 <nav>
                     <ul>
-                        <li><a href="../about/index.html">ABOUT</a></li>
+                        <li><a href="../about/about.html">ABOUT</a></li>
                         <li><a href="../career/career.html">CAREER</a></li>
                         <li><a href="../hobby/hobby.html">HOBBY</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
@@ -48,11 +49,17 @@
                             <div class="fieldContactDetails">m.zyskowska@yahoo.com</div><br>
                             <div class="fieldContactType">Website</div>
                             <div class="fieldContactDetails">www.martynazyskowska.com</div><br>
+
+                            <div id="container">
+                                <div id="circle"></div>
+                            </div>
+
+                            
                             <div class="socials">
-                                <a href="http://www.facebook.com/martynazyskowska"><i class="icon-facebook"></i></a>
-                                <a href="https://www.youtube.com/channel/UChPndU4jje8bcv3mQ6ZbBqw/playlists"><i class="icon-youtube"></i></a>
-                                <a href="https://www.linkedin.com/in/martyna-zyskowska"><i class="icon-linkedin"></i></a>
-                                <a href="https://www.instagram.com/martynazyz/"><i class="icon-instagram"></i></a>
+                                <a href="http://www.facebook.com/martynazyskowska" target="_blank"><i class="icon-facebook"></i></a>
+                                <a href="https://www.youtube.com/channel/UChPndU4jje8bcv3mQ6ZbBqw/playlists" target="_blank"><i class="icon-youtube"></i></a>
+                                <a href="https://www.linkedin.com/in/martyna-zyskowska" target="_blank"><i class="icon-linkedin"></i></a>
+                                <a href="https://www.instagram.com/martynazyz/" target="_blank"><i class="icon-instagram"></i></a>
                             </div>
                         </div>
                         <!-- <div class="download"><button id="download">Full Resume</button></div> -->
@@ -61,19 +68,22 @@
                     <div id="emailForm"> 
                         <div id="greeting">Looking forward to answering your email</div>
                         <div id="emailFormDetails">
-                            <div id="firstRow">
-                                <input type="text" id="userName" name="userName" placeholder="Name *" onfocus="this.placeholder=''" onblur="this.placeholder='Name *'">
-                                <input type="text" id="userEmail" name="userEmail" placeholder="Email *" onfocus="this.placeholder=''" onblur="this.placeholder='Email *'">
-                            </div>
-                            <input type="text" id="subject" name="subject" placeholder="Subject" onfocus="this.placeholder=''" onblur="this.placeholder='Subject'">
-                            <textarea id="message" name="message" placeholder="Message" style="height:200px" onfocus="this.placeholder=''" onblur="this.placeholder='Message'"></textarea>  
-                            <input type="submit" value="Send">
+                            <!-- <form action="/action_page.php"> -->
+                            <form onsubmit="success()" >
+                                <div id="firstRow">
+                                    <input type="text" required id="userName" name="userName" placeholder="Name *" onfocus="this.placeholder=''" onblur="this.placeholder='Name *'" >
+                                    <input type="email" required id="userEmail" name="userEmail" placeholder="Email *" onfocus="this.placeholder=''" onblur="this.placeholder='Email *'" >
+                                </div>
+                                <input type="text" required="required" id="subject" name="subject" placeholder="Subject" onfocus="this.placeholder=''" onblur="this.placeholder='Subject'" >
+                                <textarea id="message" required="required" name="message" placeholder="Message" style="height:200px" onfocus="this.placeholder=''" onblur="this.placeholder='Message'"></textarea>  
+                                <input id="send" type="submit" target="_blank" value="Send">
+                            </form>
                         </div>
                     </div>
-                    <div style="clear:both"></div>
+                 <div style="clear:both"></div>
                 </div>
 
-        
+                <a href="#top"><div id="bookmark">Top of Page</div></a>
         
         
             </div>
@@ -81,5 +91,19 @@
                 <p>&copy; 2018 Martyna Zyskowska. All rights reserved.</p>
             </footer>
         </main>
+
+        <script type="text/javascript">
+             function success(){
+                event.preventDefault();
+                swal({
+                    title: "Thank you for your message!",
+                    text: "You will be contacted shortly.",
+                    icon: "success"
+                }).then(function(){
+                     location.reload();
+                 });
+            }
+
+        </script>
     </body>
 </html> 

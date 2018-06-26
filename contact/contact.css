@@ -2,7 +2,8 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4%;
+    margin-top: 3%;
+
 }
 
 #boxBusinessCard {
@@ -19,6 +20,7 @@
     border: 5px solid rgb(40, 192, 243);
     transition-duration: 0.2s;
 }
+
 
 #boxBusinessCardDetails {
     padding: 6%;
@@ -71,6 +73,7 @@
 .socials {
     width: 100%;
     text-align: center;
+    margin-top: 2%;
 }
 
 .icon-facebook:before { 
@@ -147,8 +150,9 @@
     border-left: none;
     font-family: century gothic;
     float: left;
-    width: 50%;
+    width: 49%;
     text-align: center;
+
 }
 
 #greeting {
@@ -187,7 +191,7 @@
     height: 160px !important;
 }
 
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
     font: 12px century gothic,sans-serif;
     padding: 10px;
     border: 1px solid black;
@@ -199,36 +203,92 @@ input[type=text], textarea {
 }
 
 input[type=text]:focus,
+input[type=email]:focus,
 textarea:focus {
     box-shadow: 0px 0px 0px 1px rgb(40, 192, 243);
     border-color: white;
 }
 
 input[type=submit] {
-    width: 100%;
+    width: 50%;
     background-color: black;
     color: white;
-    padding: 13px 20px;
+    padding: 16px 20px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition-duration: 0.2s;
-    margin-top: 3px;
+    transition-duration: 1s;
+    margin-top: 5px;
     outline: none;
 }
 
 input[type=submit]:hover {
+    width: 100%;
     background-color: rgb(40, 192, 243);
     color: black;
-    transition-duration: 0.2s;
+    transition-duration: 0.4s;
     font-weight: 700;
 }
 
-@media screen and (max-width: 1510px) {
+
+
+
+#container {
+    width: 60%;
+    height: 1px;
+    /* background-color: rgb(40, 192, 243); */
+    background-color: black;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+#circle {
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    /* background:rgb(40, 192, 243); */
+    background-color: black;
+    left:0;
+    right:0;
+    margin:0 auto;
+    border-radius: 100%;
+    top:-4px;
+}
+
+
+#bookmark {
+    width: 80px;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    background-color: lightgray;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#bookmark:hover {
+    background-color: rgb(40, 192, 243);
+}
+
+#bookmark:active {
+    background-color: rgb(40, 192, 243);
+}
+
+
+@media screen and (max-width: 1000px) {
     #boxBusinessCard {
         border: none;
         width: 100%;
-        margin-bottom: 2%;
+
         border: 5px solid rgb(40, 192, 243);
     }
 
@@ -237,15 +297,23 @@ input[type=submit]:hover {
     }
 
     #emailForm {
-        margin-top: 2%;
         float: left;
         width: 100%;
         border: none;
-        margin-left: 1%; /* because the emailForm field has 49% in total */
+        border: 2px dashed black;
+        border-top: none;
+        padding: 2.5px;
     }
 
     #greeting {
         font-size: 15px;
         font-weight: 700;
     }
+}
+
+
+
+
+textarea {
+    height: 50px;
 }
