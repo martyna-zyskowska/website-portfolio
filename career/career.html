@@ -1,52 +1,47 @@
-<!-- html document type -->
 <!DOCTYPE html>
-
-<!-- html language type -->
 <html lang="pl-PL">
 
-    <!-- technical -->
     <head>
-        <!--polish typos-->
         <meta charset="utf-8">
-        <!-- responsive web design: window > device -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- tab title -->
         <title>Martyna Zyskowska</title>
-        <!-- take info from css file -->
-        <link rel="stylesheet" href="../about/style.css">
-        <!-- take info from css file -->
+        <link rel="stylesheet" href="../about/about.css">
         <link rel="stylesheet" href="career.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>        
     </head>
 
-    <!-- content -->
     <body>
         <main>
             <div id="wrap">
                 <header>
-                    <h1>Martyna Zyskowska</h1>
+                    <h1><span style="color:rgb(40, 192, 243)">Martyna</span> Zyskowska</h1>
                     <h2>PORTFOLIO</h2>
                 </header>
                 <nav>
                     <ul>
-                        <li><a href="../about/index.html">ABOUT</a></li>
+                        <li><a href="../about/about.html">ABOUT</a></li>
                         <li><a href="career.html">CAREER</a></li>
                         <li><a href="../hobby/hobby.html">HOBBY</a></li>
-                        <li><a href="../contact/contact.html">CONTACT</a></li>
+                        <li><a href="../contact/contact.php">CONTACT</a></li>
                     </ul>
                 </nav>
+                <div id="box">                
 
-                <div class="title">Employment</div>
-                <div class="section">
-
-                    <div class="logo">
-                        <div id="volvo">
-                            <img src="img/work/volvoLogo.jpg" alt="volvoLogo"> 
-                            <span id="volvodesc">
-                                <span id="year">2013-2015</span><br>
-                                <h4>Reporting analyst,
-                                Project Administrator,
-                                Software Administrator</h2>
-                                <p>
+                    <div class="first">
+                        <button class="title">Experience</button>
+                        <div class="panel">
+                            <div id="menuExperience" >
+                                <div id="m1" class="menu-item" onclick="myFunction(this)"><img src="img/work/volvoLogo.jpg"></div>
+                                <div id="m2" class="menu-item" onclick="myFunction(this)"><img src="img/work/hclLogo.jpg"></div>
+                                <div id="m3" class="menu-item" onclick="myFunction(this)"><img src="img/work/ubsLogo.jpg"></div>
+                                <div id="m4" class="menu-item" onclick="myFunction(this)"><img src="img/work/ac3Logo.png"></div>
+                            </div>
+                            <div class="container2">
+                                <div id="c1" class="experience" style="display: none;">
+                                    <span id="role">Reporting Analyst / Project Administrator</span><br> 
+                                    <span id="year">2013&ndash;2015</span> 
+                                    <div id="description">             
                                     • Interpreting data, analysing results using statistical techniques and providing ongoing reports;<br>
                                     • Identifyng, analysing and interpreting trends and patterns in complex data sets;<br>
                                     • Creating dashboards, ad-hoc reports and performance metrics;<br>
@@ -57,198 +52,414 @@
                                     • Performing quality reviews;<br>
                                     • Cooperating with the analyst team;<br>
                                     • Being responsible for a day-to-day operations of the services.
-                                </p>
-                            </span>
+                                    </div>
+                                </div>
+                                <div id="c2" class="experience" style="display: none;">
+                                    <span id="role">Software Administrator</span><br>
+                                    <span id="year">2015&ndash;2017</span>
+                                    <div id="description">
+                                    • Evaluating software requirements based on business needs;<br>
+                                    • Updating existing request models based on business needs;<br>
+                                    • Building and modifing services to meet user requirements;<br>
+                                    • Providing efficient flow of change requests through change management process;<br>
+                                    • Managing the lifecycle of request services;<br>
+                                    • Resolving incidents escalated as a 2nd line of support;<br>
+                                    • Proactively developing and maintaining technical knowledge;<br>
+                                    • Managing and dividing work among developers;<br>                                            
+                                    • Providing solution of change request errors;<br>
+                                    • Being responsible for a day-to-day operations of the services;<br>
+                                    • Creating and maintaining reports, solution proposals and project documentation library;<br>                                            • Undertaking continuous improvement;<br>
+                                    • Integrating and managing tools such as JIRA and Remedy;<br>
+                                    • Providing mentoring to fellow administrators;<br>
+                                    • Cooperating with other IT teams.
+                                    </div>
+                                </div>
+                                <div id="c3" class="experience" style="display: none;">
+                                    <span id="role">Project Officer</span><br>
+                                    <span id="year">2017&ndash;2018</span>
+                                    <div id="description">
+                                    • Provides a first level support (application support requests and incidents);<br>
+                                    • Taking end-to-end ownership and responsibility of an incident;<br>
+                                    • Records all the relevant information in the ticketing system;<br>
+                                    • Assigning tasks that cannot be resolved to appropriate groups;<br>
+                                    • Advises the business on improvement options related to usage of digital platforms;<br>
+                                    • Designed and implemented database of incidents solutions;<br>
+                                    • Gained and adopted knowledge about Service Component Manager role;<br>
+                                    • Preparing reports on service delivery quantity and quality;<br>                                
+                                    • Supporting complex digital initiatives and control processes.
+                                    </div>
+                                </div>
+                                <div id="c4" class="experience" style="display: none;">
+                                    <span id="role">Service Desk Analyst</span><br>
+                                    <span id="year">2018&ndash;</span>
+                                    <div id="description">
+                                    • Interpreting data, analysing results using statistical techniques and providing ongoing reports;<br>
+                                    • Identifyng, analysing and interpreting trends and patterns in complex data sets;<br>
+                                    • Creating dashboards, ad-hoc reports and performance metrics;<br>
+                                    • Working with management to prioritize business and information needs;<br>
+                                    • Establishing and maintaining the project documentation library;
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
+                    <div class="first">
+                        <button class="title">Education</button>
+                        <div class="panel">
+                            <div id="menuEducation">
+                                <div id="m5" class="menu-item" onclick="myFunction(this)"><img src="img/school/wsbLogo.png"></div>
+                                <div id="m6" class="menu-item" onclick="myFunction(this)"><img src="img/school/wsfLogo.jpg"></div>
+                            </div>
+                            <div class="container4">
+                                <div id="c5" class="education" style="display: none;">
+                                    <span id="role">BA: Business English</span><br>
+                                    <span id="yearSchool">2011&ndash;2014, Higher School of Banking</span>
+                                </div>
+                                <div id="c6" class="education" style="display: none;">
+                                    <span id="role">MA: Translatology</span><br>
+                                    <span id="yearSchool">2014&ndash;2016, Philological School of Higher Education</span>
+                                </div>
 
-                    <div class="logo">
-                        <div id="hcl">
-                            <img src="img/work/hclLogo.jpg" alt="hclLogo"> 
-                            <span id="hcldesc">
-                                Text
-                            </span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="logo">
-                        <div id="ubs">
-                            <img src="img/work/ubsLogo.jpg" alt="ubsLogo"> 
-                            <span id="ubsdesc">
-                                Text
-                            </span>
+                    <div class="first">
+                        <button class="title">Skills</button>
+                        <div class="panel">
+                        
+
+                            <div class="container">
+                                <div class="logo">
+                                    <img src="img/skills/remedyLogo.png" alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="firstSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf006;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+
+                            <div class="container">
+                                <div class="logo">
+                                    <img src="img/skills/snowLogo.png" alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="secondSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf123;</i>
+                                        <i style="font-size:24px" class="fa">&#xf006;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+
+                            <div class="container">
+                                <div class="logo">
+                                    <img src="img/skills/jiraLogo.png" alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="thirdSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf123;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+        
+                            <div class="container">
+                                <div class="logo">
+                                    <img src="img/skills/confluenceLogo.png"  alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="fourthSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf123;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+        
+                            <div class="container">
+                                <div class="logo">
+                                    <img src= "img/skills/hpLogo.png" alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="fifthSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf123;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+         
+                            <div class="container">
+                                <div class="logo">
+                                    <img src="img/skills/officeLogo.png"alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="sixthSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf123;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+         
+                            <div class="container">
+                                <div class="logo">
+                                    <img src="img/skills/htmlLogo.png" alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="seventhSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf123;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+         
+                            <div class="container">
+                                <div class="logo">
+                                    <img src= "img/skills/cssLogo.png" alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="eighthSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf123;</i>
+                                        <i style="font-size:24px" class="fa">&#xf006;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+         
+                            <div class="container">
+                                <div class="logo">
+                                    <img src="img/skills/jsLogo.png" alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="ninethSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf006;</i>
+                                        <i style="font-size:24px" class="fa">&#xf006;</i>
+                                        <i style="font-size:24px" class="fa">&#xf006;</i>
+                                        <i style="font-size:24px" class="fa">&#xf006;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+               
+                            <div class="container">
+                                <div class="logo">
+                                    <img src="img/skills/aemLogo.jpg" alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="tenthSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf123;</i>
+                                        <i style="font-size:24px" class="fa">&#xf006;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+
+                            <div class="container">
+                                <div class="logo">
+                                    <img src="img/skills/visualLogo.jpg" alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="eleventhSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf006;</i>
+                                        <i style="font-size:24px" class="fa">&#xf006;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+                                     
+                            <div class="container">
+                                <div class="logo">
+                                    <img src= "img/skills/hootsuiteLogo.jpg" alt="MZ">
+                                </div>
+                                <article>
+                                    <div id="tvelvethSkill">
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf123;</i>
+                                        <i style="font-size:24px" class="fa">&#xf006;</i>
+                                    </div>
+                                </article>
+                                <div style="clear:both"></div> 
+                            </div>
+
+
+                            <div class="stars">
+
+                                        <i style="font-size:24px" class="fa">&#xf005;</i> Novice
+                                        &nbsp;&nbsp;
+
+
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+
+                                        Competence
+                                        &nbsp;&nbsp;
+
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+
+                                        Proficiency
+                                        &nbsp;&nbsp;
+
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+
+                                        Expertise
+                                        &nbsp;&nbsp;
+
+
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        <i style="font-size:24px" class="fa">&#xf005;</i>
+                                        Mastery
+
+                                <div style="clear:both"></div> 
+                            </div>
+
+
                         </div>
                     </div>
 
-                    <div class="logo">
-                        <div id="ac3">
-                            <img src="img/work/ac3Logo.png" alt="ac3Logo"> 
-                            <span id="ac3desc">
-                                Text
-                            </span>
+                    <div class="first">
+                        <button class="title">Certificates</button>      
+                        <div class="panel">
+
+                            <div class="container">
+                                <div class="logoCertificates">
+                                    <img src="img/certificates/itilLogo.png" alt="MZ">
+                                </div>
+                                <!-- <article>
+                                    <h4>2015-present</h4>
+                                    <p>ITIL Foundation certificate in IT Service Management<br>
+                                    Axelos Global Best Practice</p>
+                                </article> -->
+                                <div style="clear:both"></div> 
+                            </div>
+
+                            <div class="container">
+                                <div class="logoCertificates">
+                                    <img src="img/certificates/timeLogo.png" alt="MZ">
+                                </div>
+                                <!-- <article> 
+                                    <h4>2015-present</h4>
+                                    <p>Time Management<br>
+                                    TBC</p>
+                                </article> -->
+                                <div style="clear:both"></div> 
+                            </div>
+                        
                         </div>
                     </div>
 
-                </div>
+                </div>              
+            </div>  
 
-                <div class="title">Education</div>
-                <div class="section">
+            <script>
+                var acc = document.getElementsByClassName("title");
+                var i;                 
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight){
+                            panel.style.maxHeight = null;
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
 
-                    <div class="logo">
-                        <div id="wsb">
-                            <img src="img/school/wsbLogo.png" alt="wsbLogo"> 
-                            <span id="wsbdesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
+                            if(panel.children[0].id === "menuExperience" || panel.children[0].id === "menuEducation"){
+                                [].forEach.call(panel.children[1].children, function (value, index){
+                                    value.style.display = "none";   
+                                }); 
+                            }                                                      
+                        } 
+                    });
+                }
+            </script>
+            <script>
+                function myFunction(menu) {
+                    var index = menu.id.match(/\d+/g)[0];                           
+                    var content = document.getElementById("c"+index);
+                    var panel = content.parentElement.parentElement;
+                    var allExperience = document.getElementsByClassName("experience");
+                    var allEducation = document.getElementsByClassName("education");
 
-                    <div class="logo">
-                        <div id="wsf">
-                            <img src="img/school/wsfLogo.jpg" alt="wsfLogo"> 
-                            <span id="wsfdesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                    if(content.classList.contains("experience")){
+                        [].forEach.call(allExperience, function (value, index){
+                            if(value.id !== content.id){
+                                   value.style.display = "none";   
+                            }
+                        });   
+                    }else if (content.classList.contains("education")){
+                        [].forEach.call(allEducation, function (value, index){
+                            if(value.id !== content.id){
+                                   value.style.display = "none";   
+                            }
+                        });   
+                    }
 
-                <div class="title">Skills</div>
-                <div class="section">
-
-                    <div class="logo">
-                        <div id="remedy">
-                                <img src="img/skills/remedyLogo.png" alt="remedyLogo"> 
-                            <span id="remedydesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="logo">
-                        <div id="snow">
-                                <img src="img/skills/snowLogo.png" alt="snowLogo"> 
-                            <span id="snowdesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="logo">
-                        <div id="confluence">
-                                <img src="img/skills/confluenceLogo.png" alt="confluenceLogo"> 
-                            <span id="confluencedesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="logo">
-                        <div id="jira">
-                            <img src="img/skills/jiraLogo.png" alt="jiraLogo"> 
-                            <span id="jiradesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="section">
-
-                    <div class="logo">
-                        <div id="html">
-                            <img src="img/skills/htmlLogo.png" alt="htmlLogo"> 
-                            <span id="htmldesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="logo">
-                        <div id="css">
-                            <img src="img/skills/cssLogo.png" alt="cssLogo"> 
-                            <span id="cssdesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="logo">
-                        <div id="js">
-                            <img src="img/skills/jsLogo.png" alt="jsLogo"> 
-                            <span id="jsdesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="section">
-
-                    <div class="logo">
-                        <div id="hootsuite">
-                            <img src="img/skills/hootsuiteLogo.jpg" alt="hootsuiteLogo"> 
-                            <span id="hootsuitedesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="logo">
-                        <div id="office">
-                            <img src="img/skills/officeLogo.png" alt="officeLogo"> 
-                            <span id="officedesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="logo">
-                        <div id="aem">
-                                <img src="img/skills/aemLogo.jpg" alt="aemLogo"> 
-                            <span id="aemdesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="logo">
-                        <div id="hp">
-                            <img src="img/skills/hpLogo.png" alt="hpLogo"> 
-                            <span id="hpdesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="title">Certificates</div>
-                <div class="section">
-
-                    <div class="logo">
-                        <div id="itil">
-                            <img src="img/certificates/itilLogo.png" alt="itilLogo"> 
-                            <span id="itildesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="logo">
-                        <div id="time">
-                            <img src="img/certificates/timeLogo.png" alt="timeLogo"> 
-                            <span id="timedesc">
-                                Text
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+                    var newHeight = parseInt(panel.style.maxHeight);
+                    if (content.style.display === "none") {
+                        content.style.display = "block";
+                        debugger;
+                        newHeight += content.offsetHeight;
+                    } else {
+                        content.style.display = "none";                       
+                        newHeight -=  content.offsetHeight;                        
+                    }
+                    panel.style.maxHeight = newHeight+"px";
+                }
+            </script>
+            
             <footer>
                 <p>&copy; 2018 Martyna Zyskowska. All rights reserved.</p>
             </footer>
+
         </main>
     </body>
 </html> 

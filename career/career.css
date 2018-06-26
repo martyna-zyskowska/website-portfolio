@@ -1,548 +1,251 @@
-nav 
-{
-    margin-bottom: 5% !important;
+#box {
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+
 }
 
-.title 
-{
+.title {
+    background-color: rgb(207, 206, 206);
+    color: #444;
+    cursor: pointer;
+    padding: 1%;
+    /* width: 60%; */
+    width: 900px;
+    border: none;
     text-align: center;
-    font-size: 30px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    width: 70%;
+    outline: none;
+    font-size: 20px;
+    transition: 1s;
+    font-weight: 700;
+    border-radius: 12px;
+}
+
+.active, .title:hover {
+    background-color: rgb(40, 192, 243);
+    /* width: 60%; */
+    width: 900px;
+    transition: 1s;
+}
+
+.title:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 850px;
+    /* width: 60%; */
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 2vw;
-    font-variant: small-caps;
+    margin-top: 0.2%;
+    margin-bottom: 0.2%;
 }
 
-.section 
-{
-    width: 100%;
+#menuExperience {
+    width: 99%;
     text-align: center;
+    margin: auto;
 }
 
-img 
-{
-    width: 100%;
+.hide-content{
+    display: none;
 }
 
-.logo 
-{
+.show-content{
+    display: block;
+}
+
+.menu-item {
     display: inline-block;
-    width: 15%;
-    /* transition-duration: 0.3s; */
-    z-index: -1;
-    position: inherit;
-}
-
-.logo:hover {
-    transform: scale(0.8); 
-    transition-duration: 0.3s;
-}
-
-
-
-
-
-
-
-#volvo {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#volvo #volvodesc {
-    visibility: hidden;
-    width: 310%;
-    background-color: lightgray;
-    color: black;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 0;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-    text-align: left !important;
-
-}
-#volvo:hover #volvodesc {
-    visibility: visible;
-}
-
-
-
-
-#hcl {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#hcl #hcldesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
+    width: 23%;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#hcl:hover #hcldesc {
-    visibility: visible;
+    margin: auto;
 }
 
-
-#ubs {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
+.menu-item:hover {
+    cursor: pointer;
 }
-#ubs #ubsdesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
+
+.menu-item2:hover {
+    cursor: pointer;
+}
+
+.menu-item:active {
+    transform: scale(0.9);
+}
+
+.container2 {
+    width: 92%;
+    background-color: #eee;
+    text-align: left;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#c1, #c2, #c3, #c4 {
+    display: none;
+    padding: 2%;
+    padding-left: 3%;
+}
+
+#menuEducation {
+    width: 99%;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#ubs:hover #ubsdesc {
-    visibility: visible;
+    margin: auto;
 }
 
-
-
-#ac3 {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
+.container4 {
+    width: 46%;
+    text-align: left;
+    margin: auto;
+    background-color: #eee;
+    border-radius: 10px;
 }
-#ac3 #ac3desc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
+
+#c5, #c6 {
+     display: none;
+     padding: 2%;
+     padding-bottom: 3%;
+     padding-left: 3%;
+     text-align: center;
+}
+
+.logo {
+    color: #444;
+    /* border: 1px dotted black; */
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#ac3:hover #ac3desc {
-    visibility: visible;
+    outline: none;
+    width: 125px;
+    height: 75px;
+    float: left;
+    overflow: hidden;
 }
 
-
-#wsb {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#wsb #wsbdesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
+.logoCertificates {
+    color: #444;
+    /* border: 1px dotted black; */
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#wsb:hover #wsbdesc {
-    visibility: visible;
+    outline: none;
+    width: 200px;
+    height: 125px;
+    float: left;
+    overflow: hidden;
 }
 
-
-#wsf {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#wsf #wsfdesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#wsf:hover #wsfdesc {
-    visibility: visible;
+img {
+    width: 97%;
+    border: 1px dotted gray;
 }
 
-
-
-#remedy {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#remedy #remedydesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#remedy:hover #remedydesc {
-    visibility: visible;
-}
-
-
-#snow {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#snow #snowdesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#snow:hover #snowdesc {
-    visibility: visible;
-}
-
-
-#confluence {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#confluence #confluencedesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#confluence:hover #confluencedesc {
-    visibility: visible;
-}
-
-
-
-#jira {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#jira #jiradesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#jira:hover #jiradesc {
-    visibility: visible;
-}
-
-
-
-
-#html {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#html #htmldesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#html:hover #htmldesc {
-    visibility: visible;
-}
-
-
-
-
-#css {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#css #cssdesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#css:hover #cssdesc {
-    visibility: visible;
-}
-
-
-
-
-
-#js {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#js #jsdesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#js:hover #jsdesc {
-    visibility: visible;
-}
-
-
-
-#hootsuite {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#hootsuite #hootsuitedesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#hootsuite:hover #hootsuitedesc {
-    visibility: visible;
-}
-
-
-
-
-#office {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#office #officedesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#office:hover #officedesc {
-    visibility: visible;
-}
-
-
-
-
-
-
-#aem {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#aem #aemdesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#aem:hover #aemdesc {
-    visibility: visible;
-}
-
-
-
-#hp {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#hp #hpdesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#hp:hover #hpdesc {
-    visibility: visible;
-}
-
-
-
-#itil {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#itil #itildesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#itil:hover #itildesc {
-    visibility: visible;
-}
-
-
-
-#time {
-    position: relative;
-    display: inline-block;
-    z-index: -1;
-}
-#time #timedesc {
-    visibility: hidden;
-    width: 300%;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 50%;
-    margin-left: -60px;
-}
-#time:hover #timedesc {
-    visibility: visible;
-}
-
-#year, h4, p {
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 100%;
+article {
+    text-align: justify;
     font-family: century gothic;
+    overflow-wrap: break-word;
+    padding-left: 1px;
+    float: left;
+    overflow: auto;
+    width: 150px;
+    height: 73px;
+    border: 1px solid lightgray;
+    border-left: none;
+}
+
+.container {
+    display: inline-block;
+}
+
+
+#firstSkill,
+#secondSkill,
+#thirdSkill,
+#fourthSkill,
+#fifthSkill,
+#sixthSkill,
+#seventhSkill,
+#eighthSkill,
+#ninethSkill,
+#tenthSkill,
+#eleventhSkill,
+#tvelvethSkill
+{
+    text-align: center;
+    line-height: 73px;
+    vertical-align: middle;
+    font-size: 20px;
+    color: rgb(40, 192, 243);
+    font-weight: 700;
+}
+
+.stars {
+    float: center;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: gray;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 1px gray dashed;
+    width: 98.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#role {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-variant-caps: all-petite-caps ;
+    font-family: calibri;
 }
 
 #year {
-    font-size: 2vw;
-    font-weight: 700;
-    color: rgb(40, 192, 243);
-
+    font-size: 16px;
+    font-weight: 500;
 }
 
-h4 {
-    font-size: 1.4vw;
+#yearSchool {
+    font-size: 14px;
+    font-weight: 500;
 }
 
-p {
-    font-size: 1.1vw;
+#description {
+    font-size: 16px;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
+
+@media screen and (max-width: 1000px) 
+{
+    .title {
+        width: 80%;
+    }
+
+    .title:hover {
+        width: 80%;
+    }
+
+    .title:active {
+        background-color: rgb(40, 192, 243);
+    }
+
+    .panel {
+        width: 75%;
+    }
+    
+    /* .menu-item {
+        display: block;
+    } */
+}  
