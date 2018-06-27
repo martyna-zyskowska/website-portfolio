@@ -43,69 +43,70 @@ img:hover {
   transition: 1s;
 }
 
-#bookmarks {
-  width: 90%;
-  margin-top: 1%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #bookmarkTop {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1%;
-  margin-top: 1%;
-  background-color: lightgray;
-  padding: 8px 20px;
-  border-radius: 5px;
-  font-size: 14px;
-  width: 100px;
+  margin-left: 15.5%;
+  font-size: 40px;
+  max-width:0;
 }
 
-#bookmarkLeft {
-
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: lightgray;
-  padding: 8px 20px;
-  border-radius: 5px;
-  font-size: 14px;
-  width: 80px;
+.fa-arrow-circle-left {
+  background-color: black;
+  color: white;
+  width: 40px;
+  border-radius: 100%;
+  height: 40px;
 }
 
-#bookmarkRight {
-
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: lightgray;
-  padding: 8px 20px;
-  border-radius: 5px;
-  font-size: 14px;
-  width: 80px;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-#bookmarkLeft:hover,
-#bookmarkRight:hover,
-#bookmarkTop:hover {
+.fa-arrow-circle-left:hover {
   background-color: rgb(40, 192, 243);
+  color: white;
 }
 
-#bookmarkLeft:active,
-#bookmarkRight:active,
-#bookmarkTop:active {
-  background-color: rgb(40, 192, 243);
+  #bookmark {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 14%;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+    border: none;
+}
+  
+#bookmark:hover {
+    color: #ffffff;
+    background-color: rgb(40, 192, 243);
+}
+  
+#bookmark i {
+    font-size: 40px;
 }
 
-@media screen and (max-width: 750px)
+#bookmark:active {
+    outline: none;
+}
+
+  @media screen and (max-width: 1000px)
+  {
+      #bookmarkTop {
+        margin-left: 15%;
+      }
+
+      #bookmark {
+        right: 8.5%;
+    }
+      .back-to-top {
+        bottom: 0;
+        left: 88%;
+        }
+
+  }
+
+
+  @media screen and (max-width: 750px)
 {
     .gallery
     {
@@ -121,28 +122,13 @@ a {
       -webkit-filter: grayscale(0);
       filter: grayscale(0);
     }
+
     img:hover{
       transform: none;
       transition: none;
     }
-}
 
-.back-to-top {
-  background: none;
-  margin: 0;
-  position: fixed;
-  bottom: 15%;
-  right: 8%;
-  width: 60px;
-  height: 60px;
-  z-index: 100;
-  display: none;
-  text-decoration: none;
-  color: rgb(40, 192, 243);
-  background-color: #ffffff;
+    #bookmarkTop {
+      margin-left: 13%;
+    }
   }
-
-  .back-to-top i {
-    font-size: 60px;
-  }
-

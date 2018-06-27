@@ -4,13 +4,14 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 #music 
 {
-    background-color: lightgray;
-    border: black 4px solid;
+    background-color: white;
+    border: #444 4px solid;
+    color: #444;
     width: 250px;
     margin-left: auto;
     margin-right: auto;
@@ -23,10 +24,13 @@
     padding-top: 40px;
     padding-bottom: 40px;
     transition-duration: 0.3s;
+    letter-spacing: 2px;
 }
 
 #music:hover {
     border: rgb(40, 192, 243) 4px solid;
+    box-shadow: 0 0 20px rgb(40, 192, 243);
+    color: black;
     transition-duration: 0.3s;
     cursor: pointer;
     padding-top: 39px;
@@ -36,8 +40,9 @@
 
 #photography 
 {
-    background-color: lightgray;
-    border: black 4px solid;
+    background-color: white;
+    border: #444 4px solid;
+    color: #444;
     width: 250px;
     margin-left: auto;
     margin-right: auto;
@@ -49,15 +54,43 @@
     padding-top: 40px;
     padding-bottom: 40px;
     transition-duration: 0.3s;
+    letter-spacing: 2px;
 }
 
 #photography:hover {
     border: rgb(40, 192, 243) 4px solid;
+    box-shadow: 0 0 20px rgb(40, 192, 243);
     color: black;
     cursor: pointer;
     padding-top: 39px;
     padding-bottom: 39px;
     font-size: 30px;
+}
+
+#bookmark {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 15%;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+    border: none;
+}
+  
+#bookmark:hover {
+    color: #ffffff;
+    background-color: rgb(40, 192, 243);
+}
+  
+#bookmark i {
+    font-size: 40px;
+}
+
+#bookmark:active {
+    outline: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -83,6 +116,11 @@
         padding-top: 2%;
         padding-bottom: 2%;
         font-size: 3.5vw;
+    }
+
+    #bookmark {
+        bottom: 40px;
+        right: 8.5%;
     }
 }   
 

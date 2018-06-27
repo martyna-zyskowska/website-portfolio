@@ -37,11 +37,7 @@
                     </ul>
                 </nav>
 
-                <a href="#" class="back-to-top" style="display: inline";>
-                    <i class="fa fa-arrow-circle-up"></i>                    
-                </a>
-
-                <a href="../hobby.html"><div id="bookmarkTop">Back to Hobby</div></a>
+                <a href="../hobby.html"><div id="bookmarkTop"><i class="fa fa-arrow-circle-left"></i></div></a> -->
 
                 <div class="gallery">
 
@@ -204,12 +200,11 @@
                     </div>
                 </div>
                 
-                <div id="bookmarks">
-                    <a href="../hobby.html"><span id="bookmarkLeft">Back to Hobby</span></a>
-                    <a href="#top"><span id="bookmarkRight">Top of Page</span></a>
-                </div>
 
             </div>
+
+            <button onclick="topFunction()" id="bookmark"><i class="fa fa-arrow-circle-up"></i></button>     
+
             <footer>
                 <p>&copy; 2018 Martyna Zyskowska. All rights reserved.</p>
             </footer>
@@ -235,5 +230,25 @@
             })
             });
         </script>
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("bookmark").style.display = "block";
+                } else {
+                    document.getElementById("bookmark").style.display = "none";
+                }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
     </body>
 </html> 
