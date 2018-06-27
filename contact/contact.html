@@ -19,6 +19,8 @@
         <!-- zaciągnięcie ikon socialmedia z css -->
         <link rel="stylesheet" href="../icons/css/fontello.css" type="text/css">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
 
     <!-- treść -->
@@ -83,7 +85,8 @@
                  <div style="clear:both"></div>
                 </div>
 
-                <a href="#top"><div id="bookmark">Top of Page</div></a>
+                <button onclick="topFunction()" id="bookmark"><i class="fa fa-arrow-circle-up"></i></button>     
+
         
         
             </div>
@@ -104,6 +107,25 @@
                  });
             }
 
+        </script>
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("bookmark").style.display = "block";
+                } else {
+                    document.getElementById("bookmark").style.display = "none";
+                }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
         </script>
     </body>
 </html> 

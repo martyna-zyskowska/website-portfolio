@@ -10,6 +10,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Martyna Zyskowska</title>
         <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
 
     <!-- content -->
@@ -34,37 +36,50 @@
                         <img id="imgMobile" src="coding.png" alt="coding">
                     </div>
                     <article>
-                        <h3>Hello!</h3>
-                        <p>I am ambitious and highly motivated individual with ITIL certificate 
-                        and strong understanding of Software Development Life Cycle, who has 
-                        5-years of experience in providing application support within IT Service
-                        Management practice. During the whole career path, I am working with the tools 
-                        such as JIRA, Confluence and Microsoft Office suite. Additionally, 
-                        I have basic knowledge of SQL, HTML and CSS languages, and I am learning
-                        JavaScript on my own.</p>
-                        <p>Detail oriented with analytical thinking skills whose purpose is to assume
-                         a role allowing to take responsibility for the analysis, troubleshooting, gaining
-                        requirements, creating guides and operational in an international company. 
-                        Additionally, I have basic knowledge of SQL, I am learning Detail oriented with
-                        analytical thinking skills whose purpose is to assume a role allowing to take 
-                        responsibility for the analysis, roubleshooting, gaining requirements, creating
-                        guides and operational documentation.</p>
+                        <h3>Hello and welcome!</h3>
+                        <p>My name is Martyna Zyskowska and I am ambitious and highly motivated individual
+                        with more than 5-years of experience in providing application support within IT Service
+                        Management practice. Detail oriented with analytical thinking skills who is particularly
+                        familiar with analysis, troubleshooting, gaining requirements, creating guides and
+                        operational documentation. Additionally, I aquired ITIL Foundation certificate that allowed
+                        me to better understand the Software Development Life Cycle.</p>
+                        <p>As I am always keen to learn new things, I decided to change my career path a little bit 
+                        and I have started to learn programming. After 6 months of self development I possess an advanced
+                        knowledge of HTML5 and CSS3 languages, intermediate level of JavaScript and I am making
+                        my first steps in backend technologies such as PHP. The page you can see now is my
+                        very first project which allowed me to obtain a wide knowledge of what the front end
+                        technologies are.</p>
+                        <p>In my spare time, besides learning web technologies ;), I am travelling around Australia,
+                        making photos of the nature and trying to do unusual activities I have never done before,
+                        as "every success is born of passion". Take a "trip" around my page to see more.</p>
                     </article>
                     <div style="clear:both"></div> <!-- because previous sections have float left -->
                 </section>
-                <div id="bookmark"><a href="#top"><div id="bookmarkBottom">Top of Page</div></a></div>
+
+                <button onclick="topFunction()" id="bookmark"><i class="fa fa-arrow-circle-up"></i></button>     
+                
             </div>
             <footer>
                 <p>&copy; 2018 Martyna Zyskowska. All rights reserved.</p>
             </footer>
         </main>
-
         <script>
-            function myFunction(x) {
-                x.classList.toggle("change");
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("bookmark").style.display = "block";
+                } else {
+                    document.getElementById("bookmark").style.display = "none";
+                }
             }
-            </script>
-
-
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
     </body>
 </html> 

@@ -139,42 +139,30 @@ footer
 }
 
 #bookmark {
-    width: 70%;
-    text-align: center;
-
-    margin-left: auto;
-    margin-right: auto;
-    
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 15%;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+    border: none;
 }
-
-#bookmarkBottom {
-
-    float: right;
-    text-align: center;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: lightgray;
-    padding: 8px 20px;
-    border-radius: 5px;
-
-    font-size: 14px;
-    width: 80px;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-#bookmarkBottom:hover {
+  
+#bookmark:hover {
+    color: #ffffff;
     background-color: rgb(40, 192, 243);
 }
-
-#bookmarkBottom:active {
-    background-color: rgb(40, 192, 243);
+  
+#bookmark i {
+    font-size: 40px;
 }
 
+#bookmark:active {
+    outline: none;
+}
 
 
 
@@ -215,6 +203,7 @@ a {
         letter-spacing: 1px;
         font-size: 14px;
         border: none;
+        text-align: center;
     }
     nav ul li a 
     {
@@ -258,19 +247,12 @@ a {
     color: rgb(40, 192, 243);
     }
     #bookmark {
-        width: 80%;
-        text-align: right;
-        margin-top: 2%;
-        margin-left: auto;
-        margin-right: auto;
+        right: 10%;
     }
+
     
     a {
         color: black;
         text-decoration: none;
     }
 }
-
-
-
-
