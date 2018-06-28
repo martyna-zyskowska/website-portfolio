@@ -134,9 +134,18 @@
     overflow: hidden;
 }
 
+.logoSkills {
+    color: #444;
+    text-align: center;
+    outline: none;
+    width: 126px;
+    height: 80px;
+    float: left;
+    overflow: hidden;
+}
+
 .logoCertificates {
     color: #444;
-    /* border: 1px dotted black; */
     text-align: center;
     outline: none;
     width: 200px;
@@ -145,6 +154,22 @@
     overflow: hidden;
 }
 
+.logoCertificates img:hover {
+    box-shadow: none;
+    border: 2px solid gray;
+    cursor: auto;
+}
+
+.logoSkills img {
+
+    border-radius: 15px;
+}
+
+.logoSkills img:hover {
+    box-shadow: none;
+    border: 2px solid gray;
+    cursor: auto;
+}
 
 img {
     width: 91%;
@@ -159,6 +184,7 @@ img:hover {
     box-shadow: 0 0 20px rgb(40, 192, 243);
 }
 
+
 article {
     text-align: justify;
     font-family: century gothic;
@@ -168,7 +194,7 @@ article {
     overflow: auto;
     width: 150px;
     height: 73px;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
     border-left: none;
 }
 
@@ -206,10 +232,11 @@ article {
     color: gray;
     margin-top: 1%;
     margin-bottom: 1%;
-    border: 1px gray dashed;
     width: 98.5%;
     margin-left: auto;
     margin-right: auto;
+    border: 1px dashed black;
+    border-radius: 10px;
 }
 
 #role {
@@ -279,11 +306,11 @@ article {
 @media screen and (max-width: 1000px) 
 {
     .title {
-        width: 80%;
+        width: 90%;
     }
 
     .title:hover {
-        width: 80%;
+        width: 90%;
     }
 
     .title:active {
@@ -291,17 +318,41 @@ article {
     }
 
     .panel {
-        width: 75%;
+        width: 85%;
     }
     
-    /* .menu-item {
-        display: block;
-    } */
+    .menu-item {
+        float: center;
+        text-align: center;
+        margin: auto;
+        width: 45%;
+    }
 
     #role {
-        font-size: 26px;
+        font-size: 24px;
         letter-spacing: 0;
-        }
+    }
+
+    #year {
+        font-size: 15px;
+    }
+
+    #description {
+        font-size: 14px;
+    }
+    
+    .container4 {
+        width: 90%;
+    }
+
+    #roleSchool {
+        font-size: 24px;
+        letter-spacing: 0;
+    }
+
+    #yearSchool {
+        font-size: 13px;
+    }
 
     #bookmark {
         bottom: 20px;
