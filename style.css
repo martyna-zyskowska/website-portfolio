@@ -43,7 +43,6 @@ p {
     margin: 0;
 }
 
-
 .stars, .twinkling {
   position:absolute;
   top:0;
@@ -63,7 +62,6 @@ p {
 .twinkling{
   background:transparent url(twinkling.png) repeat top center;
   z-index:1;
-
   -moz-animation:move-twink-back 500s linear infinite;
   -ms-animation:move-twink-back 500s linear infinite;
   -o-animation:move-twink-back 500s linear infinite;

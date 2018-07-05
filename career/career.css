@@ -2,29 +2,27 @@
     width: 100%;
     text-align: center;
     margin-top: 2%;
-
 }
 
 .title {
     background-color: rgb(207, 206, 206);
     background-color:#ffffff;
     color: #444;
-    cursor: pointer;
-    padding: 1%;
     width: 900px;
+    padding: 1%;
     border: 3px solid #444;
     text-align: center;
-    outline: none;
     font-size: 20px;
-    transition: 0.5s;
     font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
     border-radius: 20px;
     text-transform: uppercase;
 }
 
 .active, .title:hover {
     background-color: rgb(40, 192, 243);
-    /* width: 60%; */
     width: 900px;
     transition: 1s;
     color: black;
@@ -43,16 +41,15 @@
 
 .panel {
     background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
     width: 850px;
-    /* width: 60%; */
+    max-height: 0;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.2%;
     margin-bottom: 0.2%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 #menuExperience {
@@ -61,7 +58,7 @@
     margin: auto;
 }
 
-.hide-content{
+.hide-content {
     display: none;
 }
 
@@ -76,12 +73,6 @@
     margin: auto;
     border-radius: 20px;
 }
-
-/* .menu-item:hover,
-.menu-item2:hover {
-    background: rgb(40, 192, 243);
-    cursor: pointer;
-} */
 
 .menu-item:active {
     transform: scale(0.9);
@@ -125,31 +116,30 @@
 
 .logo {
     color: #444;
-    /* border: 1px dotted black; */
-    text-align: center;
-    outline: none;
     width: 125px;
     height: 75px;
     float: left;
     overflow: hidden;
+    text-align: center;
+    outline: none;
 }
 
 .logoSkills {
     color: #444;
-    text-align: center;
-    outline: none;
     width: 126px;
     height: 80px;
+    text-align: center;
+    outline: none;
     float: left;
     overflow: hidden;
 }
 
 .logoCertificates {
     color: #444;
-    text-align: center;
-    outline: none;
     width: 200px;
     height: 125px;
+    text-align: center;
+    outline: none;
     float: left;
     overflow: hidden;
 }
@@ -161,7 +151,6 @@
 }
 
 .logoSkills img {
-
     border-radius: 15px;
 }
 
@@ -184,7 +173,6 @@ img:hover {
     box-shadow: 0 0 20px rgb(40, 192, 243);
 }
 
-
 article {
     text-align: justify;
     font-family: century gothic;
@@ -194,7 +182,6 @@ article {
     overflow: auto;
     width: 150px;
     height: 73px;
-    /* border: 1px solid lightgray; */
     border-left: none;
 }
 
@@ -214,8 +201,7 @@ article {
 #ninethSkill,
 #tenthSkill,
 #eleventhSkill,
-#tvelvethSkill
-{
+#tvelvethSkill {
     text-align: center;
     line-height: 73px;
     vertical-align: middle;
@@ -226,15 +212,15 @@ article {
 
 .stars {
     float: center;
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    color: gray;
+    width: 98.5%;
     margin-top: 1%;
     margin-bottom: 1%;
-    width: 98.5%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    color: gray;
     border: 1px dashed black;
     border-radius: 10px;
 }
@@ -303,67 +289,52 @@ article {
     letter-spacing: 15px;
 }
 
-@media screen and (max-width: 1000px) 
-{
+@media screen and (max-width: 1000px) {
     .title {
         width: 90%;
     }
-
     .title:hover {
         width: 90%;
     }
-
     .title:active {
         background-color: rgb(40, 192, 243);
     }
-
     .panel {
         width: 85%;
     }
-    
     .menu-item {
         float: center;
         text-align: center;
         margin: auto;
         width: 45%;
     }
-
     #role {
         font-size: 24px;
         letter-spacing: 0;
     }
-
     #year {
         font-size: 15px;
     }
-
     #description {
         font-size: 14px;
     }
-    
     .container4 {
         width: 90%;
     }
-
     #roleSchool {
         font-size: 24px;
         letter-spacing: 0;
     }
-
     #yearSchool {
         font-size: 13px;
     }
-
     #bookmark {
         bottom: 20px;
         right: 10%;
-}
-
-.titleText {
-    margin-left: 27px;
-    letter-spacing: 5px;
-    font-size: 16px;
-}
+    }
+    .titleText {
+        margin-left: 27px;
+        letter-spacing: 5px;
+        font-size: 16px;
+    }
 }  
-
-

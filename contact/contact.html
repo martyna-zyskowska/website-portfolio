@@ -1,29 +1,17 @@
-<!-- typ dokumentu html -->
 <!DOCTYPE html>
-
-<!-- typ języka html -->
 <html lang="pl-PL">
 
-    <!-- techniczne -->
     <head>
-        <!--polskie znaki-->
         <meta charset="utf-8">
-        <!-- dostosowanie okna do urządzenia -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- tytuł taba -->
         <title>Martyna Zyskowska</title>
-        <!-- zaciąganie info z css -->
         <link rel="stylesheet" href="../about/about.css">
-        <!-- zaciąganie info z css -->
         <link rel="stylesheet" href="contact.css">
-        <!-- zaciągnięcie ikon socialmedia z css -->
         <link rel="stylesheet" href="../icons/css/fontello.css" type="text/css">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     </head>
 
-    <!-- treść -->
     <body>
         <main>
             <div id="wrap">
@@ -39,7 +27,6 @@
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
-                
                 <div id="box">
                     <div id="boxBusinessCard">
                         <div id="boxBusinessCardDetails">
@@ -51,12 +38,9 @@
                             <div class="fieldContactDetails">m.zyskowska@yahoo.com</div><br>
                             <div class="fieldContactType">Website</div>
                             <div class="fieldContactDetails">www.martynazyskowska.com</div><br>
-
                             <div id="container">
                                 <div id="circle"></div>
                             </div>
-
-                            
                             <div class="socials">
                                 <a href="http://www.facebook.com/martynazyskowska" target="_blank"><i class="icon-facebook"></i></a>
                                 <a href="https://www.youtube.com/channel/UChPndU4jje8bcv3mQ6ZbBqw/playlists" target="_blank"><i class="icon-youtube"></i></a>
@@ -64,13 +48,10 @@
                                 <a href="https://www.instagram.com/martynazyz/" target="_blank"><i class="icon-instagram"></i></a>
                             </div>
                         </div>
-                        <!-- <div class="download"><button id="download">Full Resume</button></div> -->
                     </div>
-
                     <div id="emailForm"> 
                         <div id="greeting">Looking forward to answering your email</div>
                         <div id="emailFormDetails">
-                            <!-- <form action="/action_page.php"> -->
                             <form onsubmit="success()" >
                                 <div id="firstRow">
                                     <input type="text" required id="userName" name="userName" placeholder="Name *" onfocus="this.placeholder=''" onblur="this.placeholder='Name *'" >
@@ -84,11 +65,7 @@
                     </div>
                  <div style="clear:both"></div>
                 </div>
-
                 <button onclick="topFunction()" id="bookmark"><i class="fa fa-arrow-circle-up"></i></button>     
-
-        
-        
             </div>
             <footer>
                 <p>&copy; 2018 Martyna Zyskowska. All rights reserved.</p>
@@ -106,7 +83,6 @@
                      location.reload();
                  });
             }
-
         </script>
 
         <script>
@@ -120,7 +96,6 @@
                     document.getElementById("bookmark").style.display = "none";
                 }
             }
-            
             // When the user clicks on the button, scroll to the top of the document
             function topFunction() {
                 document.body.scrollTop = 0;

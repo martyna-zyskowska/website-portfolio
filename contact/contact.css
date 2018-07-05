@@ -8,12 +8,12 @@
 }
 
 #boxBusinessCard {
-    font-family: century gothic;
-    float: left;
     width: 49%;
     margin-left: auto;
     margin-right: auto;
+    float: left;
     border: 5px solid black;
+    font-family: century gothic;
     transition-duration: 0.2s;
     flex-grow: 1;
 }
@@ -59,10 +59,8 @@
     content: '\f30c'; 
     font-size: 35px; 
     padding: 2%;
-    /* background-color: #4668b3; */
     color: black;
     border-radius: 100%;
-    padding: 2%;
     transition-duration: 0.2s;
 }
 
@@ -77,7 +75,6 @@
     content: '\f167'; 
     font-size: 35px; 
     padding: 2%; 
-    /* background-color: #d94348; */
     color: black;
     border-radius: 100%;
     transition-duration: 0.2s;
@@ -94,7 +91,6 @@
     content: '\f318'; 
     font-size: 35px; 
     padding: 2%; 
-    /* background-color: #0e76a8; */
     color: black;
     border-radius: 100%;
     transition-duration: 0.2s;
@@ -111,7 +107,6 @@
     content: '\f32d'; 
     font-size: 35px; 
     padding: 2%; 
-    /* background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  */
     color: black;
     border-radius: 100%;
     transition-duration: 0.2s;
@@ -125,11 +120,11 @@
 }
 
 #emailForm {
+    width: 49%;
+    float: left;
     border: 2px dashed black;
     border-left: none;
     font-family: century gothic;
-    float: left;
-    width: 49%;
     text-align: center;
     flex-grow: 1;
 }
@@ -217,13 +212,9 @@ input[type=submit]:hover {
     font-weight: 700;
 }
 
-
-
-
 #container {
     width: 60%;
     height: 1px;
-    /* background-color: rgb(40, 192, 243); */
     background-color: black;
     position:relative;
     margin-left: auto;
@@ -234,7 +225,6 @@ input[type=submit]:hover {
     width: 10px;
     height: 10px;
     position: absolute;
-    /* background:rgb(40, 192, 243); */
     background-color: black;
     left:0;
     right:0;
@@ -274,25 +264,23 @@ a {
     text-decoration: none;
 }
 
-
+textarea {
+    height: 50px;
+}
 
 @media screen and (max-width: 1000px) {
-
     #box {
         display: block;
         align-items: none;
     }
-
     #boxBusinessCard {
         border: none;
         width: 100%;
         border: 5px solid rgb(40, 192, 243);
     }
-
     #fieldName {
         font-size: 33px;
     }
-
     #emailForm {
         float: left;
         width: 100%;
@@ -301,20 +289,11 @@ a {
         border-top: none;
         padding: 2.5px;
     }
-
     #greeting {
         font-size: 18px;
         font-weight: 700;
     }
-
     #bookmark {
         right: 8.5%;
     }
-}
-
-
-
-
-textarea {
-    height: 50px;
 }
