@@ -1,25 +1,15 @@
-<!-- typ dokumentu html -->
 <!DOCTYPE html>
-
-<!-- typ języka html -->
 <html lang="pl-PL">
 
-    <!-- techniczne -->
     <head>
-        <!--polskie znaki-->
         <meta charset="utf-8">
-        <!-- dostosowanie okna do urządzenia -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- tytuł taba -->
         <title>Martyna Zyskowska</title>
-        <!-- zaciąganie info z css -->
         <link rel="stylesheet" href="../about/about.css">
-        <!-- zaciąganie info z css -->
         <link rel="stylesheet" href="hobby.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <!-- treść -->
     <body>
         <main>
             <div id="wrap">
@@ -35,16 +25,12 @@
                         <li><a href="../contact/contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
-
                 <div id="hobby">
                     <a href="music/music.html"><div id="music">Music</div></a>
                     <a href="photography/photography.html"><div id="photography">Photography</div></a>
                 </div>
-
             </div>
-
             <button onclick="topFunction()" id="bookmark"><i class="fa fa-arrow-circle-up"></i></button>     
-
             <footer>
                 <p>&copy; 2018 Martyna Zyskowska. All rights reserved.</p>
             </footer>
@@ -61,13 +47,11 @@
                     document.getElementById("bookmark").style.display = "none";
                 }
             }
-            
             // When the user clicks on the button, scroll to the top of the document
             function topFunction() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
             }
         </script>
-
     </body>
 </html> 

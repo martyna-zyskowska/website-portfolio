@@ -1,10 +1,8 @@
-nav ul li a:hover
-{
-    color: crimson;
+nav ul li a:hover {
+  color: crimson;
 }
 
 html, body {
-  /* background: #222; */
   opacity: 1;
 }
 
@@ -70,7 +68,7 @@ html, body {
 }
 
 .view {
-margin-top: 160px;
+  margin-top: 160px;
   -webkit-perspective: 400;
           perspective: 400;
 }
@@ -93,6 +91,7 @@ margin-top: 160px;
   -webkit-animation: rotate 20s infinite linear;
           animation: rotate 20s infinite linear;
 }
+
 .plane.main .circle {
   width: 120px;
   height: 120px;
@@ -103,6 +102,7 @@ margin-top: 160px;
   box-sizing: border-box;
   box-shadow: 0 0 60px crimson, inset 0 0 60px crimson;
 }
+
 .plane.main .circle::before, .plane.main .circle::after {
   content: "";
   display: block;
@@ -119,30 +119,37 @@ margin-top: 160px;
   box-sizing: border-box;
   box-shadow: 0 0 60px 2px crimson;
 }
+
 .plane.main .circle::before {
   -webkit-transform: translateZ(-90px);
           transform: translateZ(-90px);
 }
+
 .plane.main .circle::after {
   -webkit-transform: translateZ(90px);
           transform: translateZ(90px);
 }
+
 .plane.main .circle:nth-child(1) {
   -webkit-transform: rotateZ(72deg) rotateX(63.435deg);
           transform: rotateZ(72deg) rotateX(63.435deg);
 }
+
 .plane.main .circle:nth-child(2) {
   -webkit-transform: rotateZ(144deg) rotateX(63.435deg);
           transform: rotateZ(144deg) rotateX(63.435deg);
 }
+
 .plane.main .circle:nth-child(3) {
   -webkit-transform: rotateZ(216deg) rotateX(63.435deg);
           transform: rotateZ(216deg) rotateX(63.435deg);
 }
+
 .plane.main .circle:nth-child(4) {
   -webkit-transform: rotateZ(288deg) rotateX(63.435deg);
           transform: rotateZ(288deg) rotateX(63.435deg);
 }
+
 .plane.main .circle:nth-child(5) {
   -webkit-transform: rotateZ(360deg) rotateX(63.435deg);
           transform: rotateZ(360deg) rotateX(63.435deg);
@@ -170,7 +177,6 @@ margin-top: 160px;
   }
 }
 
-
 @media screen and (max-width: 750px) 
 {
   #videoBox {
@@ -182,14 +188,12 @@ margin-top: 160px;
     height: 60%;
   }
 #video {
-
-  width: 80%;
-  height: 55%;
-  position: absolute;
-  z-index: -99; 
-}
-
+    width: 80%;
+    height: 55%;
+    position: absolute;
+    z-index: -99; 
+  }
 #bookmark {
-  right: 3%;
-}
+    right: 3%;
+  }
 }
