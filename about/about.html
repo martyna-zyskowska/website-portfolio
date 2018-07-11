@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +13,14 @@
             <div id="wrap">
                 <header>
                     <h1><span style="color:rgb(40, 192, 243)">Martyna</span> Zyskowska</h1>
-                    <h2>PORTFOLIO</h2>
+                    <h2>Portfolio</h2>
                 </header>
                 <nav>
                     <ul>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="../career/career.html">CAREER</a></li>
-                        <li><a href="../hobby/hobby.html">HOBBY</a></li>
-                        <li><a href="../contact/contact.html">CONTACT</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="../career/career.html">Career</a></li>
+                        <li><a href="../hobby/hobby.html">Hobby</a></li>
+                        <li><a href="../contact/contact.php">Contact</a></li>
                     </ul>
                 </nav>
                 <section>
@@ -40,14 +39,14 @@
                         <p>As I am always keen to learn new things, I decided to change my career path a little bit 
                         and I have started to learn programming. After 6 months of self development I possess an advanced
                         knowledge of HTML5 and CSS3 languages, intermediate level of JavaScript and I am making
-                        my first steps in backend technologies such as PHP. The page you can see now is my
-                        very first project which allowed me to obtain a wide knowledge of what the front end
+                        my first steps in backend technologies. The page you can see now is my
+                        very first project which allowed me to obtain an understanding of what the front end
                         technologies are.</p>
                         <p>In my spare time, besides learning web technologies ;), I am travelling around Australia,
-                        making photos of the nature and trying to do unusual activities I have never done before,
+                        making the photos of nature and trying to do unusual activities I have never done before,
                         as "every success is born of passion". Take a "trip" around my page to see more.</p>
                     </article>
-                    <div style="clear:both"></div> <!-- because previous sections have float left -->
+                    <div style="clear:both"></div>
                 </section>
                 <button onclick="topFunction()" id="bookmark"><i class="fa fa-arrow-circle-up"></i></button>     
             </div>
@@ -58,7 +57,6 @@
         <script>
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function() {scrollFunction()};
-            
             function scrollFunction() {
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                     document.getElementById("bookmark").style.display = "block";
@@ -66,7 +64,6 @@
                     document.getElementById("bookmark").style.display = "none";
                 }
             }
-            
             // When the user clicks on the button, scroll to the top of the document
             function topFunction() {
                 document.body.scrollTop = 0;

@@ -1,38 +1,36 @@
 #box {
     width: 100%;
-    text-align: center;
     margin-top: 2%;
+    text-align: center;
 }
 
 .title {
-    background-color: rgb(207, 206, 206);
-    background-color:#ffffff;
     color: #444;
     width: 900px;
     padding: 1%;
     border: 3px solid #444;
-    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
     font-size: 20px;
     font-weight: 700;
-    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
     outline: none;
     transition: 0.5s;
-    border-radius: 20px;
-    text-transform: uppercase;
 }
 
 .active, .title:hover {
     background-color: rgb(40, 192, 243);
+    color: black;
     width: 900px;
     transition: 1s;
-    color: black;
 }
 
 .title:after {
+    float: right;
     content: '\002B';
     color: #777;
     font-weight: bold;
-    float: right;
 }
 
 .active:after {
@@ -41,8 +39,8 @@
 
 .panel {
     background-color: white;
-    width: 850px;
     max-height: 0;
+    width: 890px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -62,13 +60,13 @@
     display: none;
 }
 
-.show-content{
+.show-content {
     display: block;
 }
 
 .menu-item {
+    width: 24%;
     display: inline-block;
-    width: 23%;
     text-align: center;
     margin: auto;
     border-radius: 20px;
@@ -79,8 +77,8 @@
 }
 
 .container2 {
-    width: 92%;
     background-color: #eee;
+    width: 98%;
     text-align: left;
     margin: auto;
     border-radius: 10px;
@@ -99,10 +97,10 @@
 }
 
 .container4 {
+    background-color: #eee;
     width: 46%;
     text-align: left;
     margin: auto;
-    background-color: #eee;
     border-radius: 10px;
 }
 
@@ -116,31 +114,31 @@
 
 .logo {
     color: #444;
+    float: left;
     width: 125px;
     height: 75px;
-    float: left;
-    overflow: hidden;
     text-align: center;
     outline: none;
+    overflow: hidden;
 }
 
 .logoSkills {
     color: #444;
+    float: left;
     width: 126px;
     height: 80px;
     text-align: center;
     outline: none;
-    float: left;
     overflow: hidden;
 }
 
 .logoCertificates {
     color: #444;
+    float: left;
     width: 200px;
     height: 125px;
     text-align: center;
     outline: none;
-    float: left;
     overflow: hidden;
 }
 
@@ -162,8 +160,8 @@
 
 img {
     width: 91%;
-    border: 2px solid gray;
     padding: 3%; 
+    border: 2px solid gray;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -189,7 +187,6 @@ article {
     display: inline-block;
 }
 
-
 #firstSkill,
 #secondSkill,
 #thirdSkill,
@@ -202,35 +199,39 @@ article {
 #tenthSkill,
 #eleventhSkill,
 #tvelvethSkill {
-    text-align: center;
+    color: rgb(40, 192, 243);
     line-height: 73px;
     vertical-align: middle;
+    text-align: center;
     font-size: 20px;
-    color: rgb(40, 192, 243);
     font-weight: 700;
 }
 
 .stars {
+    color: gray;
     float: center;
-    width: 98.5%;
+    width: 95%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 1%;
-    padding-bottom: 1%;
     text-align: center;
-    color: gray;
     border: 1px dashed black;
     border-radius: 10px;
+}
+
+.legend {
+    display: inline;
 }
 
 #role {
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
-    font-variant-caps: all-petite-caps ;
-    font-family: calibri;
+    font-variant-caps: all-petite-caps;
+    font-family: "calibri", sans-serif;
 }
 
 #roleSchool {
@@ -238,7 +239,7 @@ article {
     font-weight: 700;
     letter-spacing: 1px;
     font-variant-caps: all-petite-caps ;
-    font-family: calibri;
+    font-family: "calibri", sans-serif;
 }
 
 #year {
@@ -253,19 +254,18 @@ article {
 
 #description {
     font-size: 16px;
-    padding-left: 2%;
     padding-top: 2%;
     padding-bottom: 1%;
 }
 
 #bookmark {
-    display: none;
+    background-color: black;
+    color: white;
     position: fixed;
     bottom: 20px;
     right: 30px;
+    display: none;
     z-index: 100;
-    background-color: black;
-    color: white;
     cursor: pointer;
     border-radius: 100%;
     border: none;
@@ -277,7 +277,7 @@ article {
 }
   
 #bookmark i {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 #bookmark:active {
@@ -306,7 +306,7 @@ article {
         float: center;
         text-align: center;
         margin: auto;
-        width: 45%;
+        width: 49%;
     }
     #role {
         font-size: 24px;
@@ -319,7 +319,7 @@ article {
         font-size: 14px;
     }
     .container4 {
-        width: 90%;
+        width: 98%;
     }
     #roleSchool {
         font-size: 24px;
@@ -330,11 +330,28 @@ article {
     }
     #bookmark {
         bottom: 20px;
-        right: 10%;
-    }
+        right: 7%;
+    }   
     .titleText {
         margin-left: 27px;
         letter-spacing: 5px;
         font-size: 16px;
     }
-}  
+    .stars {
+        width: 560px;
+    }
+    .legend {
+        display: block;
+        text-align: left;
+        padding: 2%;
+    }
+    .logoCertificates {
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width: 687px) {
+    .stars {
+        width: 280px;
+    }
+}

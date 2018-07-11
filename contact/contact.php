@@ -1,3 +1,35 @@
+<?php
+
+if(isset($_POST['userEmail'])
+    && isset($_POST['userName']) 
+    && isset($_POST['subject'])
+    && isset($_POST['message']))
+{
+    $name = $_POST['userName'];
+    $user_email = $_POST['userEmail'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $email_exp = "/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/";
+    $string_exp = "/^[A-Za-z .'-]+$/";
+   
+    if(preg_match($string_exp, $name) &&
+        preg_match($email_exp, $user_email)&&
+        preg_match($string_exp, $subject) &&
+        preg_match($string_exp, $message)){
+               
+        $email_body = "You have received a new message from the user $name.\n". 
+        "Here is the message:\n $message".
+
+        $to = "m.zyskowska@yahoo.com";
+        $headers = "From: $user_email \r\n";
+        $headers .= "Reply-To: $user_email \r\n";
+
+        mail($to,$subject,$message,$headers);
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pl-PL">
     <head>
