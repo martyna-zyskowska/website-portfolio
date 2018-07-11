@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +8,19 @@
         <link rel="stylesheet" href="hobby.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-
     <body>
         <main>
             <div id="wrap">
                 <header>
                     <h1><span style="color:rgb(40, 192, 243)">Martyna</span> Zyskowska</h1>
-                    <h2>PORTFOLIO</h2>
+                    <h2>Portfolio</h2>
                 </header>
                 <nav>
                     <ul>
-                        <li><a href="../about/about.html">ABOUT</a></li>
-                        <li><a href="../career/career.html">CAREER</a></li>
-                        <li><a href="hobby.html">HOBBY</a></li>
-                        <li><a href="../contact/contact.html">CONTACT</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../career/career.html">Career</a></li>
+                        <li><a href="hobby.html">Hobby</a></li>
+                        <li><a href="../contact/contact.php">Contact</a></li>
                     </ul>
                 </nav>
                 <div id="hobby">
@@ -35,18 +33,16 @@
                 <p>&copy; 2018 Martyna Zyskowska. All rights reserved.</p>
             </footer>
         </main>
-
         <script>
             // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            
+            window.onscroll = function() {scrollFunction()};           
             function scrollFunction() {
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                     document.getElementById("bookmark").style.display = "block";
                 } else {
                     document.getElementById("bookmark").style.display = "none";
                 }
-            }
+            }         
             // When the user clicks on the button, scroll to the top of the document
             function topFunction() {
                 document.body.scrollTop = 0;

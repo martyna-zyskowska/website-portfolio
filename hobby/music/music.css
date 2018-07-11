@@ -1,199 +1,211 @@
+body {
+    width: 98%;
+}
+
 nav ul li a:hover {
-  color: crimson;
+    color: crimson;
 }
 
 html, body {
-  opacity: 1;
+    opacity: 1;
 }
 
 #bookmarkTop {
-  text-align: center;
-  margin-left: 30%;
-  font-size: 40px;
-  max-width:0;
+    margin-left: 30%;
+    text-align: center;
+    font-size: 40px;
+    max-width:0;
 }
 
 .fa-arrow-circle-left {
-  background-color: black;
-  color: white;
-  width: 40px;
-  border-radius: 100%;
-  height: 40px;
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
 }
 
 .fa-arrow-circle-left:hover {
-  background-color: rgb(40, 192, 243);
-  color: white;
+    background-color: crimson;
+    color: white;
 }
 
 #bookmark {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 15%;
-  z-index: 100;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  border-radius: 100%;
-  border: none;
+    background-color: black;
+    color: white;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 15%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 100%;
+    border: none;
 }
 
 #bookmark:hover {
-  color: #ffffff;
-  background-color: rgb(40, 192, 243);
+    color: #ffffff;
+    background-color: rgb(40, 192, 243);
 }
 
 #bookmark i {
-  font-size: 40px;
+     font-size: 40px;
 }
 
 #bookmark:active {
-  outline: none;
+     outline: none;
 }
 
-
 #text {
-  font-size: 50px;
-  text-align: center;
-  margin-top: 320px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 160px;
 }
 
 #coming {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: crimson;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: crimson;
 }
 #soon {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .view {
-  margin-top: 160px;
-  -webkit-perspective: 400;
-          perspective: 400;
+    margin-top: 60px;
+    -webkit-perspective: 400;
+            perspective: 400;
 }
 
 .plane {
-  width: 120px;
-  height: 120px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
+    width: 120px;
+    height: 120px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    }
+
 .plane.main {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  -webkit-transform: rotateX(60deg) rotateZ(-30deg);
-          transform: rotateX(60deg) rotateZ(-30deg);
-  -webkit-animation: rotate 20s infinite linear;
-          animation: rotate 20s infinite linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transform: rotateX(60deg) rotateZ(-30deg);
+            transform: rotateX(60deg) rotateZ(-30deg);
+    -webkit-animation: rotate 20s infinite linear;
+            animation: rotate 20s infinite linear;
 }
 
 .plane.main .circle {
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  border-radius: 100%;
-  box-sizing: border-box;
-  box-shadow: 0 0 60px crimson, inset 0 0 60px crimson;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 60px crimson, inset 0 0 60px crimson;
 }
 
 .plane.main .circle::before, .plane.main .circle::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 10%;
-  height: 10%;
-  border-radius: 100%;
-  background: crimson;
-  box-sizing: border-box;
-  box-shadow: 0 0 60px 2px crimson;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+    background: crimson;
+    box-sizing: border-box;
+    box-shadow: 0 0 60px 2px crimson;
 }
 
 .plane.main .circle::before {
-  -webkit-transform: translateZ(-90px);
-          transform: translateZ(-90px);
+    -webkit-transform: translateZ(-90px);
+            transform: translateZ(-90px);
 }
 
 .plane.main .circle::after {
-  -webkit-transform: translateZ(90px);
-          transform: translateZ(90px);
+    -webkit-transform: translateZ(90px);
+            transform: translateZ(90px);
 }
 
 .plane.main .circle:nth-child(1) {
-  -webkit-transform: rotateZ(72deg) rotateX(63.435deg);
-          transform: rotateZ(72deg) rotateX(63.435deg);
+    -webkit-transform: rotateZ(72deg) rotateX(63.435deg);
+            transform: rotateZ(72deg) rotateX(63.435deg);
 }
 
 .plane.main .circle:nth-child(2) {
-  -webkit-transform: rotateZ(144deg) rotateX(63.435deg);
-          transform: rotateZ(144deg) rotateX(63.435deg);
+    -webkit-transform: rotateZ(144deg) rotateX(63.435deg);
+            transform: rotateZ(144deg) rotateX(63.435deg);
 }
 
 .plane.main .circle:nth-child(3) {
-  -webkit-transform: rotateZ(216deg) rotateX(63.435deg);
-          transform: rotateZ(216deg) rotateX(63.435deg);
+    -webkit-transform: rotateZ(216deg) rotateX(63.435deg);
+            transform: rotateZ(216deg) rotateX(63.435deg);
 }
 
 .plane.main .circle:nth-child(4) {
-  -webkit-transform: rotateZ(288deg) rotateX(63.435deg);
-          transform: rotateZ(288deg) rotateX(63.435deg);
+    -webkit-transform: rotateZ(288deg) rotateX(63.435deg);
+            transform: rotateZ(288deg) rotateX(63.435deg);
 }
 
 .plane.main .circle:nth-child(5) {
-  -webkit-transform: rotateZ(360deg) rotateX(63.435deg);
-          transform: rotateZ(360deg) rotateX(63.435deg);
+    -webkit-transform: rotateZ(360deg) rotateX(63.435deg);
+            transform: rotateZ(360deg) rotateX(63.435deg);
 }
 
 @-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
-            transform: rotateX(0) rotateY(0) rotateZ(0);
-  }
-  100% {
-    -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-            transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-  }
+    0% {
+        -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+                transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
 }
 
 @keyframes rotate {
-  0% {
-    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
-            transform: rotateX(0) rotateY(0) rotateZ(0);
-  }
-  100% {
-    -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-            transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-  }
+    0% {
+        -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+                transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
 }
 
-@media screen and (max-width: 750px) 
-{
-  #videoBox {
-    width: 80%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: aqua;
-    height: 60%;
-  }
-#video {
-    width: 80%;
-    height: 55%;
-    position: absolute;
-    z-index: -99; 
-  }
-#bookmark {
-    right: 3%;
-  }
+@media screen and (max-width: 1100px) {
+    #videoBox {
+        background-color: aqua;
+        width: 80%;
+        height: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #video {
+        width: 80%;
+        height: 55%;
+        position: absolute;
+        z-index: -99; 
+    }
+    #bookmark {
+        right: 3%;
+    }
+    #bookmarkTop {
+        margin-left: 16%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .view {
+        margin-left: 3%;
+    }
 }

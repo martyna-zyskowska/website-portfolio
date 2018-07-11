@@ -1,24 +1,22 @@
 #wrap {
-    width: 100%;
     text-align: center;
 }
 
 .gallery {
-    width: 90%;
+    width: 100%;
     display: inline-block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    margin-left: 1%;
 }
 
 .imageContainer {
+    width: 26%;
     display: inline-block;
     margin: 3px;
     position: relative;
     overflow: hidden;
-    width: 26%;
 }
 
 .imageContainer:hover {
@@ -27,8 +25,8 @@
 
 img {
     width: 100%;
-    transition: 1s;
     float: left;
+    transition: 1s;
 }
 
 img:hover {
@@ -38,7 +36,7 @@ img:hover {
 
 #bookmarkTop {
     text-align: center;
-    margin-left: 15.5%;
+    margin-left: 10.5%;
     font-size: 40px;
     max-width:0;
 }
@@ -47,8 +45,8 @@ img:hover {
     background-color: black;
     color: white;
     width: 40px;
-    border-radius: 100%;
     height: 40px;
+    border-radius: 100%;
 }
 
 .fa-arrow-circle-left:hover {
@@ -57,16 +55,16 @@ img:hover {
 }
 
 #bookmark {
+    background-color: black;
+    color: white;
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 14%;
+    right: 7%;
     z-index: 100;
-    background-color: black;
-    color: white;
-    cursor: pointer;
     border-radius: 100%;
     border: none;
+    cursor: pointer;
 }
   
 #bookmark:hover {
@@ -75,7 +73,7 @@ img:hover {
 }
   
 #bookmark i {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 #bookmark:active {
@@ -84,36 +82,36 @@ img:hover {
 
 @media screen and (max-width: 1000px) {
     #bookmarkTop {
-        margin-left: 15%;
+        margin-left: 10%;
     }
+
     #bookmark {
-        right: 8.5%;
+        right: 7%;
     }
     .back-to-top {
         bottom: 0;
         left: 88%;
     }
-  }
-
+}
 
 @media screen and (max-width: 750px) {
     .gallery {
-        width: 80%;
+        width: 90%;
         background-color: rebeccapurple;
     }
     .imageContainer {
-      width: 100%;
-      margin: -3px;
+        width: 100%;
+        margin: -3px;
     }
     img {
-      -webkit-filter: grayscale(0);
-      filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
     }
     img:hover {
-      transform: none;
-      transition: none;
+        transform: none;
+        transition: none;
     }
     #bookmarkTop {
-      margin-left: 13%;
+        margin-left: 5%;
     }
 }

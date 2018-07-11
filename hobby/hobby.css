@@ -1,80 +1,78 @@
 #hobby {
     width: 100%;
+    margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 3%;
 }
 
 #music {
     background-color: white;
-    border: #444 4px solid;
     color: #444;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
     display: inline-block;
+    width: 250px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-right: 4%;
     vertical-align: middle;
     font-size: 28px;
     font-weight: 700;
-    margin-right: 4%;
-    border-radius: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    transition-duration: 0.3s;
     letter-spacing: 2px;
+    border: #444 4px solid;
+    border-radius: 20px;
+    transition-duration: 0.3s;
 }
 
 #music:hover {
     border: rgb(40, 192, 243) 4px solid;
     box-shadow: 0 0 20px rgb(40, 192, 243);
     color: black;
-    transition-duration: 0.3s;
-    cursor: pointer;
     padding-top: 39px;
     padding-bottom: 39px;
-    font-size: 30px;
+    font-size: 29px;
+    cursor: pointer;
+    transition-duration: 0.3s;
 }
 
 #photography {
     background-color: white;
-    border: #444 4px solid;
     color: #444;
+    display: inline-block;
     width: 250px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    display: inline-block;
     vertical-align: middle;
     font-size: 28px;
     font-weight: 700;
-    border-radius: 20px;  
-    padding-top: 40px;
-    padding-bottom: 40px;
-    transition-duration: 0.3s;
     letter-spacing: 2px;
+    border: #444 4px solid;
+    border-radius: 20px;  
+    transition-duration: 0.3s;
 }
 
 #photography:hover {
+    color: black;
     border: rgb(40, 192, 243) 4px solid;
     box-shadow: 0 0 20px rgb(40, 192, 243);
-    color: black;
-    cursor: pointer;
     padding-top: 39px;
     padding-bottom: 39px;
-    font-size: 30px;
+    font-size: 29px;
+    cursor: pointer;
 }
 
 #bookmark {
+    background-color: black;
+    color: white;
     display: none;
     position: fixed;
     bottom: 20px;
     right: 15%;
     z-index: 100;
-    background-color: black;
-    color: white;
-    cursor: pointer;
     border-radius: 100%;
     border: none;
+    cursor: pointer;
 }
   
 #bookmark:hover {
@@ -83,7 +81,7 @@
 }
   
 #bookmark i {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 #bookmark:active {
@@ -98,26 +96,27 @@ a {
 @media screen and (max-width: 800px) {
     #music, #photography {
         width: 80%; 
-        vertical-align: middle;
-        margin: 0;
-        margin-top: 3%;
-        border-radius: 20px;
         padding-top: 2%;
         padding-bottom: 2%;
-        font-size: 3.5vw;
+        margin: 0;
+        margin-top: 3%;
+        vertical-align: middle;
+        border-radius: 20px;
+        font-size: 20px;
+        text-transform: uppercase;
     }
     #hobby {
         margin: 0%;
     }  
     #music:hover, #photography:hover {
         width: 80%;
-        vertical-align: middle;
-        margin: 0;
-        margin-top: 3%;
-        border-radius: 20px;
         padding-top: 2%;
         padding-bottom: 2%;
-        font-size: 3.5vw;
+        margin: 0;
+        margin-top: 3%;
+        vertical-align: middle;
+        border-radius: 20px;
+        font-size: 20px;
     }
     #bookmark {
         bottom: 40px;
