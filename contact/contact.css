@@ -268,7 +268,7 @@ textarea {
         border: 5px solid rgb(40, 192, 243);
     }
     #fieldName {
-        font-size: 33px;
+        font-size: 30px;
     }
     #emailForm {
         width: 100%;
@@ -288,8 +288,8 @@ textarea {
     .fa-youtube,
     .fa-linkedin,
     .fa-instagram {
-        width: 20px;
+        /* width: 20px; */
         padding: 8px;
-        margin: 5px 8px;
+        margin: 0;
     }
 }
