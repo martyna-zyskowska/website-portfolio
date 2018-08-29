@@ -60,8 +60,6 @@ Contributions to the project library are welcome. Please note the following guid
  - Follow [JS coding](https://developer.mozilla.org/bm/docs/Web/JavaScript/Guide) standards
  - Write tests for new functions and added featues
 ## License
-MIT License
-
-Copyright (c) 2018 Martyna Zyskowska
+MIT License: Copyright (c) 2018 Martyna Zyskowska
 ## Author
 Martyna Zyskowska
