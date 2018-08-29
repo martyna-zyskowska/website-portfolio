@@ -13,7 +13,9 @@ Personal portfolio website where you can find all information about myself (incl
 ## General Info
 The aim of the portfolio website is to provide all basic information about myself for the future employee.
 ## Screenshots
-![finance_img](./finance_img.png)
+![portfolio_img](./portfolio_img.png)
+![portfolio_img2](./portfolio_img2.png)
+![portfolio_img3](./portfolio_img3.png)
 ## Technologies
 Project is created with:
 - HTML5
