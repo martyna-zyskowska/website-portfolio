@@ -13,33 +13,29 @@ Personal portfolio website where you can find all information about myself (incl
 ## General Info
 The aim of the portfolio website is to provide all basic information about myself for the future employee.
 ## Screenshots
-![portfolio_img](./portfolio_img.png)
-![portfolio_img2](./portfolio_img2.png)
-![portfolio_img3](./portfolio_img3.png)
+![badyl_img](./badyl_img.png)
+![badyl_img2](./badyl_img2.png)
 ## Technologies
 Project is created with:
 - HTML5
 - CSS3
 - JS ES6
-- PHP
 ## Status
 Project is: _in progress_
 ## Code Examples
 
 ```
-<script type="text/javascript">
-  function success(){
-    event.preventDefault();
-    swal({
-       title: "Thank you for your message!",
-       text: "You will be contacted shortly.",
-       icon: "success"
-     }).then(function(){
-        document.getElementById("messageForm").submit();
-     });
-     return true; 
-  }
-</script>
+  window.sr = ScrollReveal();
+  var about = document.getElementById('about');
+  sr.reveal('#aboutArticle', {
+     reset: true,
+     delay: 300,
+     distance: 0
+  });
+  sr.reveal('h1, p', {
+     reset: true,
+     delay: 100
+  });
 ```
 
 ## Features
@@ -47,12 +43,14 @@ Project is: _in progress_
 * You can easily navigate between different categories
 * The site includes different sections:
   - about section
-  - hobbies (including gallery)
-  - online resume (education, work experience, certificates)
-  - contact info and contact form
+  - products
+  - clients
+  - contact
+* this is one page site 
 
 #### To-do list:
-* "Music" section
+* Fill all containers with proper information
+* Selecting background images
 ## Contributing
 Contributions to the project library are welcome. Please note the following guidelines before submitting your pull request:
  - Follow [JS coding](https://developer.mozilla.org/bm/docs/Web/JavaScript/Guide) standards
