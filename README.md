@@ -27,7 +27,19 @@ Project is: _in progress_
 ## Code Examples
 
 ```
-
+<script type="text/javascript">
+  function success(){
+    event.preventDefault();
+    swal({
+       title: "Thank you for your message!",
+       text: "You will be contacted shortly.",
+       icon: "success"
+     }).then(function(){
+        document.getElementById("messageForm").submit();
+     });
+     return true; 
+  }
+</script>
 ```
 
 ## Features
